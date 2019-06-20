@@ -11,10 +11,9 @@ public class Main {
         if(feet < 0 || inches > 12 || inches < 0){
             return -1;
         }
-        inches = inches + (feet * 12);
-        System.out.println("inches = " + inches);
-        double centimeters = inches * 2.54;
-        System.out.println((int) centimeters);
+        int in = inches + (feet * 12);
+        double centimeters = in * 2.54;
+        System.out.println(feet + " feet " + inches + " inches = " + (int) centimeters + " centimeters");
         return (int) centimeters;
     }
 
